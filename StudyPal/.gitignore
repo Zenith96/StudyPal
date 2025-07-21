@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.env
+.env
+*.DS_Store
+
+# Virtual environment
+StudyPal_venv/
+
+# VSCode
+.vscode/
+
+# Django stuff
+db.sqlite3
+/static/
+media/
