@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<h1>Your Dashboard</h1>
+
+<h2>Notes</h2>
+<ul>
+  {% for note in notes %}
+    <li>{{ note.note_number }} - {{ note.content }} ({{ note.date_posted }})</li>
+  {% empty %}
+    <li>No notes yet!</li>
+  {% endfor %}
+</ul>
+
+<h2>Tasks</h2>
+<ul>
+  {% for task in tasks %}
+    <li>{{ task.task_number }} - {{ task.content }} ({{ task.date_posted }})</li>
+  {% empty %}
+    <li>No tasks yet!</li>
+  {% endfor %}
+</ul>
+
+{% endblock content %}
+
+

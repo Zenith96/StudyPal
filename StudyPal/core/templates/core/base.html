@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>StudyPal</title>
+</head>
+<body>
+    <nav>
+  <a href="{% url 'view-dashboard' %}">Dashboard</a>
+  <a href="{% url 'view-notes' %}">Notes</a>
+  <a href="{% url 'view-tasks' %}">Tasks</a>
+</nav>
+{% block content %}{% endblock %}
+
+</body>
+</html>
