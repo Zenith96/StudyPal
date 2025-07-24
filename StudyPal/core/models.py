@@ -12,6 +12,8 @@ class Tasks(models.Model):
     
     class Meta:
         ordering = ['-date_posted']
+        verbose_name_plural = "Tasks"  
+
 
 
 
@@ -25,4 +27,5 @@ class Notes(models.Model):
     
     class Meta:
         ordering = ['-date_posted']
+        verbose_name_plural = "Notes"  
 
